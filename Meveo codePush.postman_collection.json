@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "d5cba5cc-d30e-4aae-86a8-9d5fad4316f9",
+		"name": "Meveo codePush",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updateCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://account.liquichain.io/meveo/rest/codepush/updateCheck?deploymentKey=12345&appVersion=0.8&clientUniqueId=sebPostmanTest1",
+					"protocol": "https",
+					"host": [
+						"account",
+						"liquichain",
+						"io"
+					],
+					"path": [
+						"meveo",
+						"rest",
+						"codepush",
+						"updateCheck"
+					],
+					"query": [
+						{
+							"key": "deploymentKey",
+							"value": "12345"
+						},
+						{
+							"key": "appVersion",
+							"value": "0.8"
+						},
+						{
+							"key": "label",
+							"value": "mylabel",
+							"disabled": true
+						},
+						{
+							"key": "packageHash",
+							"value": "12131232131",
+							"disabled": true
+						},
+						{
+							"key": "clientUniqueId",
+							"value": "sebPostmanTest1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateCheck",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://account.liquichain.io/meveo/rest/codepush/updateCheck?deploymentKey=12345&appVersion=0.8&clientUniqueId=sebPostmanTest1",
+							"protocol": "https",
+							"host": [
+								"account",
+								"liquichain",
+								"io"
+							],
+							"path": [
+								"meveo",
+								"rest",
+								"codepush",
+								"updateCheck"
+							],
+							"query": [
+								{
+									"key": "deploymentKey",
+									"value": "12345"
+								},
+								{
+									"key": "appVersion",
+									"value": "0.8"
+								},
+								{
+									"key": "label",
+									"value": "mylabel",
+									"disabled": true
+								},
+								{
+									"key": "packageHash",
+									"value": "12131232131",
+									"disabled": true
+								},
+								{
+									"key": "clientUniqueId",
+									"value": "sebPostmanTest1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Nov 2021 10:21:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"packageId\": \"f295fbfd-f7f1-4ab7-a7e1-200a2f8b3f4c\",\n    \"downloadURL\": \"https://account.liquichain.io/meveo/api/rest/fileSystem/binaries/default/MobileAppPackage/f295fbfd-f7f1-4ab7-a7e1-200a2f8b3f4c/packageContent\",\n    \"downloadUrl\": \"https://account.liquichain.io/meveo/api/rest/fileSystem/binaries/default/MobileAppPackage/f295fbfd-f7f1-4ab7-a7e1-200a2f8b3f4c/packageContent\",\n    \"description\": \"\",\n    \"isAvailable\": true,\n    \"isDisabled\": false,\n    \"isMandatory\": false,\n    \"appVersion\": 1,\n    \"targetBinaryRange\": \"\",\n    \"packageHash\": \"12131232131\",\n    \"label\": \"\",\n    \"packageSize\": 1024,\n    \"updateAppVersion\": false,\n    \"shouldRunBinaryVersion\": false,\n    \"rollout\": 100\n}"
+				}
+			]
+		}
+	]
+}
